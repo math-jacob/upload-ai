@@ -63,3 +63,35 @@ Instalar o shadcn/ui já instala o Tailwind e o Radix junto!
 Quando queremos focar na produtividade e não na interface
 
 Se tivermos um designer no time ou quisermos atribuir uma identidade visual para a nossa aplicação, não vale a pena utilizar o shadcn/ui
+
+Para instalar um componente do shadcn/ui com yarn:
+- "yarn shadcn-ui add button" 
+
+## Para rodar o projeto após toda a instalação do shadcn/ui
+
+"npm run dev"
+
+## Configuração do tema no shadcn/ui
+
+https://ui.shadcn.com/themes
+
+Clicando em customize
+- Escolher um tema, radius e mode
+
+Copy code
+- Somente as variaveis dentro de .dark (ou .light)
+
+No index.css
+- apagar .dar
+- colar o copy code em :root
+
+## Instalar lucide-react
+
+"yarn add lucide-react"
+- Biblioteca de icones
+
+## Codar!!
+
+Codar a interface
+- App.tsx
+- index.css
