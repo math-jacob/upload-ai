@@ -103,3 +103,12 @@ Codar
 
 Referência de como testar a rota usando a extensão rest-client
 - https://github.com/Huachao/vscode-restclient
+
+## Criar rota: createTranscriptionRoute
+
+Codar
+- codar routes/create-transcription.ts
+- não esquecer de registrar essa nova rota no server.ts
+
+"yarn add zod"
+- biblioteca para fazer VALIDAÇÕES
