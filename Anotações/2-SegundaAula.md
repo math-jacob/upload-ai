@@ -143,5 +143,6 @@ Codar
 ## Instalar cors
 
 "yarn add @fastify/cors"
+- Configura quais frontend podem acessar o serviços do nosso backend
 
 Codar server.ts para habilitar o cors
