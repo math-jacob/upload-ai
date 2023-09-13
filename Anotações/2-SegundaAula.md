@@ -74,7 +74,7 @@ O ideal seria utilizar um serviço externo para fazer upload de arquivos
 
 No entanto, descartaremos essa possibilidade pq tem que pagar
 
-## Criação das rotas para upload de video
+## Criar rota: getAllPromptsRoute
 
 "yarn add @prisma/client -D"
 - Isntalação do query builder do Prisma
@@ -88,3 +88,18 @@ Criar rota /prompts: lista todos os prompts cadastrados
 - codar no arquivo server.ts
 
 Transferir a rota /prompts para o arquivo src/routes/get-all-prompts.ts
+
+## Criar rota: uploadVideoRoute
+
+Normalmente, envia-se dados em JSON
+Nesse caso, precisamos enviar um arquivo
+Para isso, utilizaremos fastify-multipart
+
+"yarn add @fastify/multipart"
+
+Codar
+- codar routes/get-all-prompts.ts
+- não esquecer de registrar essa nova rota no server.ts
+
+Referência de como testar a rota usando a extensão rest-client
+- https://github.com/Huachao/vscode-restclient
