@@ -75,3 +75,16 @@ O ideal seria utilizar um serviço externo para fazer upload de arquivos
 No entanto, descartaremos essa possibilidade pq tem que pagar
 
 ## Criação das rotas para upload de video
+
+"yarn add @prisma/client -D"
+- Isntalação do query builder do Prisma
+
+Conexão com o banco de dados
+- Criar arquivo src/lib/prisma.ts
+- Arquivo que terá a conexão com o BD
+- Codar
+
+Criar rota /prompts: lista todos os prompts cadastrados
+- codar no arquivo server.ts
+
+Transferir a rota /prompts para o arquivo src/routes/get-all-prompts.ts
