@@ -23,3 +23,15 @@ Content-Type: application/json
 {
     "prompt": "chest exercise, body building"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "5e62a102-db7c-4908-871c-5fd073f65578",
+    "temperature": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}

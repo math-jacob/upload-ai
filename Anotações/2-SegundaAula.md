@@ -133,3 +133,15 @@ O que fazer:
 
 Criar arquivo lib/openai.ts
 - Codar a configuração para acessar a API
+
+## Criar rota: generateAICompletionRoute
+
+Codar
+- codar routes/generate-ai-completion.ts
+- não esquecer de registrar essa nova rota no server.ts
+
+## Instalar cors
+
+"yarn add @fastify/cors"
+
+Codar server.ts para habilitar o cors
