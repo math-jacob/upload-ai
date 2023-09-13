@@ -112,3 +112,24 @@ Codar
 
 "yarn add zod"
 - biblioteca para fazer VALIDAÇÕES
+
+### Utilizando a API da OpenAI para fazer a transcrição do video
+
+https://openai.com
+
+O que fazer:
+- Criar conta na OpenAI para ter 5 dólares grátis
+- Criar uma nova key
+- Copiar a key e colar no arquivo .env
+    - Como é uma informação sensível, vale a pena deixar em um arquivo separado que está no .gitignore
+
+"yarn add openai"
+- Instala a biblioteca do OpenAI
+
+"yarn add dotenv -D"
+- Instala biblioteca para ler variáveis de ambiente do arquivo .env
+- O node na versão atual não faz isso por padrão
+- Isso é necessário para ler a key da API
+
+Criar arquivo lib/openai.ts
+- Codar a configuração para acessar a API

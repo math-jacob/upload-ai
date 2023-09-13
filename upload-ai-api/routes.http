@@ -17,9 +17,9 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-POST http://localhost:3333/videos/95be5f3d-af75-4c3d-b2d4-e994842c90d6/transcription
+POST http://localhost:3333/videos/5e62a102-db7c-4908-871c-5fd073f65578/transcription
 Content-Type: application/json
 
 {
-    "prompt": "leg day, body building"
+    "prompt": "chest exercise, body building"
 }
