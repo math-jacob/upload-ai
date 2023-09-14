@@ -17,8 +17,11 @@ const statusMessages = {
   success: 'Sucesso!'
 }
 
+type VideoInputForm = {
+  onVideoUploaded: (id: string) => void
+}
 
-export function VideoInputForm() {
+export function VideoInputForm(props: VideoInputForm) {
 
   const [videoFile, setVideoFile] = useState<File | null>(null)
   const [status, setStatus] = useState<Status>('waiting')
@@ -124,6 +127,9 @@ export function VideoInputForm() {
     })
 
     setStatus('success')
+
+    // Retornando o id do video para o app
+    props.onVideoUploaded(videoId)
   }
 
   // gerar previsualização do video quando o usuario carrega-lo

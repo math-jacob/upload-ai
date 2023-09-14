@@ -14,7 +14,7 @@ type PromptSelectProps = {
 
 export function PromptSelect(props: PromptSelectProps) {
 
-    const [prompts, setPrompts] = useState<Prompt[] | null >(null) //
+    const [prompts, setPrompts] = useState<Prompt[] | null >(null)
 
     // Dispara a função quando a variável que está no parametro mudar
     // Se o array for vazio, useEffect vai ser disparado uma única vez na criação do componente prompt-select em tela
