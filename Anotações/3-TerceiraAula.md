@@ -23,3 +23,12 @@ Biblioteca famosa para edição de vídeo e audio
 Criar arquivo lib/ffmpeg.ts
 - Codar a configuração do ffmpeg
 - Colar arquivos do material complementar do ffmpeg na pasta src
+
+## Intergrar frontend com backend
+
+"yarn add axios"
+
+Biblioteca para fazer chamadas HTTP do frontend para o backend
+
+Criar arquivo lib/axios.ts
+- Fazer a configuração para acessar o backend
