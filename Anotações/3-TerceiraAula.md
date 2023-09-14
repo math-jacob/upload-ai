@@ -39,3 +39,8 @@ Criar arquivo lib/axios.ts
 
 Separar App.tsx em componentes e codar esses componentes
 - prompt-select.tsx
+
+### Adicionar pacote no backend: ai
+
+"yarn add ai"
+- Pacote que ajuda a retornar a resposta da IA aos poucos

@@ -17,8 +17,7 @@ export function App() {
     console.log(template)
   }
 
-
-
+  
   return (
     <div className='min-h-screen flex flex-col'>
       <div className="px-6 py-3 flex items-center justify-between border-b">
