@@ -60,3 +60,8 @@ No arquivo package.json, adicionar a configuração
 
 Rodar o comando
 - "yarn prisma db seed"
+
+### Adicionar pacote no frontend: ai
+
+"yarn add ai"
+- Pacote que ajuda a retornar a resposta da IA aos poucos

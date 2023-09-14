@@ -1,5 +1,4 @@
 import { FastifyInstance } from "fastify";
-import { createReadStream } from 'node:fs'
 import { z } from 'zod'
 import { streamToResponse, OpenAIStream } from 'ai'
 import { prisma } from "../lib/prisma";
@@ -11,12 +10,12 @@ export async function generateAICompletionRoute(app: FastifyInstance) {
         // Pegar o zod schema
         const bodySchema = z.object({
             videoId: z.string().uuid(),
-            template: z.string(),
+            prompt: z.string(),
             temperature: z.number().min(0).max(1).default(0.5),
         })
 
         // Validar e desestruturar o body em variaveis
-        const { videoId, template, temperature } = bodySchema.parse(request.body)
+        const { videoId, prompt, temperature } = bodySchema.parse(request.body)
 
         // Buscar o video de dentro do BD
         const video = await prisma.video.findUniqueOrThrow({
@@ -31,7 +30,7 @@ export async function generateAICompletionRoute(app: FastifyInstance) {
         }
 
         // Substituir o {transcription} que vem no template do body pela transcrição do video
-        const promptMessage = template.replace('{transcription}', video.transcription)
+        const promptMessage = prompt.replace('{transcription}', video.transcription)
 
         const response = await openai.chat.completions.create({
             model: 'gpt-3.5-turbo-16k',
@@ -50,7 +49,5 @@ export async function generateAICompletionRoute(app: FastifyInstance) {
                 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
             }
         })
-
-        return response
     })
 }
