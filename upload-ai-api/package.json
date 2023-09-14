@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "tsx watch src/server.ts"
   },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "devDependencies": {
     "@prisma/client": "^5.3.0",
     "@types/node": "^20.6.0",

@@ -44,3 +44,19 @@ Separar App.tsx em componentes e codar esses componentes
 
 "yarn add ai"
 - Pacote que ajuda a retornar a resposta da IA aos poucos
+
+### seed.ts
+
+Criar arquivo prisma/seed.ts
+- Colar o conteúdo do material complementar neste arquivo
+- Arquivo que cria dois prompts automaticamente
+
+No arquivo package.json, adicionar a configuração
+```json
+"primsa": {
+    "seed": "tsx prisma/seed.ts"
+}
+```
+
+Rodar o comando
+- "yarn prisma db seed"
